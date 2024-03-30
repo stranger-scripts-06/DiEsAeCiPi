@@ -1,21 +1,26 @@
 #include <iostream>
+#include <bits/stdc++.h>
 using namespace std;
 
-void printNumbers(int n){
+void printNTimes(int n){
 
     if(n==0){
         return;
     }
-    else{
-        cout<<n<<" ";
-    }
-    
-    return printNumbers(n-1);
+
+    cout<<"Sanhita"<<endl;
+
+    printNTimes(n-1);
+
 }
 
 int main(){
+
     int n;
     cin>>n;
-    printNumbers(n);
+
+    printNTimes(n);
+
     return 0;
+
 }
