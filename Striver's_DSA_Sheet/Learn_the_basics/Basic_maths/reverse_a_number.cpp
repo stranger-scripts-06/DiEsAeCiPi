@@ -6,14 +6,15 @@ int main(){
 
     int x;
     cin>>x;
-
-    int count = 0;
+    int ans = 0;
+    
     while(x>0){
-        count++;
+        int rem = x%10;
+        ans = ans*10 + rem;
         x /= 10;
     }
 
-    cout<<count<<endl;
+    cout<<ans<<endl;
 
     return 0;
 
