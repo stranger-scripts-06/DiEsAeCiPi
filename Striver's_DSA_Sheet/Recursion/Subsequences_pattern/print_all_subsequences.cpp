@@ -1,6 +1,3 @@
-
-// Print all subsequences of an array
-
 #include <iostream>
 #include<bits/stdc++.h>
 using namespace std;
