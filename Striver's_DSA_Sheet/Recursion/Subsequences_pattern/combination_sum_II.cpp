@@ -19,7 +19,7 @@ void combinationSum(int index, int target, vector<int>& array, vector<vector<int
 
     if(array[index]<=target){
         ds.push_back(array[index]);
-        combinationSum(index, target-array[index], array, ans, ds);
+        combinationSum(index+1, target-array[index], array, ans, ds);
         ds.pop_back();
     }
 
